@@ -365,4 +365,34 @@ button {
     100% {opacity:0;}
 }
   
+.PortfolioContainer {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.PortfolioCard {
+    display: flex;
+    flex-direction: column;
+    width: 450.75px;
+    padding-bottom: 20px;
+}
+
+.PortfolioCard h2 {
+    font-size: 42px;
+    margin: 0px 5px;
+}
+
+.PortfolioCard h6 {
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.PortfolioCard p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
 
