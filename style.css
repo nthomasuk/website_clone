@@ -207,6 +207,7 @@ button {
 #Services {
     display: flex;
     flex: 1;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0px;
 }
@@ -252,11 +253,14 @@ button {
 
 .ServiceCardText h2 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 42px;
+    margin-bottom: 0;
 }
 
 .ServiceCardText p {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-top: 0;
 }
 
 .AboutCards {
@@ -277,5 +281,88 @@ button {
 }
 
 .three:hover {
-    background-color: rgba(104, 64, 24, 0.15);
+    background-color: rgba(54, 53, 51, 0.15);
 }
+
+.ServiceFooter {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px 80px 20px;
+}
+
+.ServiceFooterCard h2 {
+    font-size: 46px;
+    padding: 0px 0px 5px 0px;
+    margin: 0;
+}
+
+.ServiceFooterCard h6 {
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 0px 10px 0px;
+}
+
+.AnimatedQuote {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.AnimatedName {
+    font-weight: 600;
+}
+
+.AnimatedQuote::before {
+    content: "'I don't like people, but I make an exception for ABC Agency. They're pretty damn cool.'";
+    animation: animate infinite 20s, fadeIn infinite 20s;
+}
+
+.AnimatedName::before {
+    content: "Brian Jones, America Big Corporation";
+    animation: fadeIn infinite 20s, animateName infinite 20s;
+}
+
+@keyframes animate {
+    0% {
+        content: "'I don't like people, but I make an exception for ABC Agency. They're pretty damn cool.'";
+    }
+    33.3% {
+        content: "'I don't like people, but I make an exception for ABC Agency. They're pretty damn cool.'";
+    }
+    66.6% {
+        content: "'ABC Agency are the best. Not only did they deliver my work on time, they even walked my dog when I was out of town'";
+    }
+    100% {
+        content: "'ABC Agency are the best. Not only did they deliver my work on time, they even walked my dog when I was out of town'";
+    }
+}
+
+@keyframes animateName {
+    0% {
+        content: "Brian Jones, America Big Corporation";
+    }
+    33.3% {
+        content: "Brian Jones, America Big Corporation";
+    }
+    66.6% {
+        content: "A Smith - Neighbour";
+    }
+    100% {
+        content: "A Smith - Neighbour";
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    10% {opacity: 1;}
+    49% {opacity: 0;}
+    74% {opacity: 1;}
+    100% {opacity:0;}
+}
+  
+
