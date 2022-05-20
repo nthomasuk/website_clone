@@ -154,10 +154,58 @@
         </div>
     </section>
     <section id="Contact">
-
-
+        <div class="ContactHeader">
+            <h2>Write us a letter</h2>
+            <h6>We appreciate your ideas</h6>
+        </div>
+        <form class="ContactForm" action="thankyou.html" method="GET">
+            <label id="Label" for="name">NAME</label><br />
+            <input type="text" name="name" placeholder="Enter your name"><br /><br />
+            <label id="Label" for="email">EMAIL ADDRESS</label><br />
+            <input type="text" name="email" placeholder="Enter your email address"><br /><br />
+            <label id="Label" for="message">YOUR MESSAGE</label><br />
+            <textarea name="mesage" placeholder="Example text" cols="30" rows="10"></textarea>
+            <br>
+            <button class="ContactButton">Submit</button>
+        </form>
     </section>
-
-    
+    <footer>
+        <div class="FooterRow">
+            <div class="FooterColumn">
+                <img id="FooterLogo" src="./images/hipsterlogo_white.png" alt="ABC logo">
+            </div>
+            <div class="FooterColumn">
+                <a id="footer-home" href="#MainImage">HOME</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Services">SERVICES</a>
+                <a href="#Portfolio">PORTFOLIO</a>
+                <a href="#Contact">CONTACT</a>
+            </div>
+            <div class="FooterColumn">
+                <h4>ADDRESS</h4>
+                <P class="footer-text">
+                Suite #913
+                <br />
+                Corporation building
+                <br />
+                Tibb Street
+                <br />
+                Manchester
+                <br />
+                M1 1TA
+                </P>
+            </div>
+            <div class="FooterColumn">
+                <h4>CONTACT</h4>
+                <p class="footer-text">
+                    E: info@youragency.com
+                    <br />
+                    T: +44 800 123 456
+                    <br />
+                    F: +44 800 123 400
+                </p>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>

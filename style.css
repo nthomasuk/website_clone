@@ -319,12 +319,14 @@ button {
 
 .AnimatedQuote::before {
     content: "'I don't like people, but I make an exception for ABC Agency. They're pretty damn cool.'";
-    animation: animate infinite 20s, fadeIn infinite 20s;
+    animation: animate infinite 16s, fadeIn infinite 16s;
+    animation-timing-function: ease;
 }
 
 .AnimatedName::before {
     content: "Brian Jones, America Big Corporation";
-    animation: fadeIn infinite 20s, animateName infinite 20s;
+    animation: fadeIn infinite 16s, animateName infinite 16s;
+    animation-timing-function: ease;
 }
 
 @keyframes animate {
@@ -396,3 +398,106 @@ button {
     font-size: 14px;
 }
 
+#Contact {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.ContactHeader {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    text-align: center;
+}
+
+.ContactHeader h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.ContactHeader h6 {
+    padding-bottom: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 300;
+    font-size: 17px;
+    font-style: italic;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+#Label {
+    font-weight: 600;
+}
+
+textarea {
+    width: 50%;
+    height: 10%;
+    resize: vertical;
+}
+
+.ContactForm button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    width: 170px;
+    align-self: center;
+    margin: 50px;
+}
+
+.ContactForm button:hover {
+    border: none;
+    background-color: #5c5c5c;
+    color: white;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+}
+
+.FooterRow {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #333333;
+    padding: 80px;
+}
+
+.FooterColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+#FooterLogo {
+    width: 80px;
+}
+
+#footer-home {
+    color: #5c5c5c;
+    margin-bottom: 20px;
+}
+
+.FooterColumn > a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5c5c5c;
+    margin: 0px 0px 30px;
+    
+}
+
+.footer-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: whitesmoke;
+}
