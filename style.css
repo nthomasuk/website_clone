@@ -33,12 +33,12 @@ header {
     margin: 20px;
 }
 
-#MainImage {
+#mainimage {
     background-image: url(./images/slider1.jpg);
     background-size: cover;
 }
 
-.NavBar {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -47,13 +47,13 @@ header {
     padding: 15px 10px 10px 150px;
 }
 
-.NavBarLogo {
+.navbarlogo {
     width: 60px;
     height: 60px;
     padding-right: 75px;
 }
 
-.Menu > a {
+.menu > a {
     font-size: 13px;
     font-weight: 500;
     color: white;
@@ -62,7 +62,7 @@ header {
     margin: 40px;
 }
 
-.Menu >a:hover {
+.menu >a:hover {
     color: grey;
 }
 
@@ -70,7 +70,7 @@ button {
     padding: 1em;
 }
 
-.TextOverlay1 {
+.textoverlay1 {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -78,33 +78,33 @@ button {
     align-items: center;
 }
 
-.LeftArrow {
+.leftarrow {
     padding-left: 10px;
 }
 
-.LeftButton {
+.leftbutton {
     background-color: transparent;
     border: none;  
 }
 
-.RightButton {
+.rightbutton {
     background-color: transparent;
     border: none;
 }
 
-.TextOverlay2 {
+.textoverlay2 {
     position: absolute;
     top: 30%;
     right: 11%;
 }
 
-.TextOverlay2 h1 {
+.textoverlay2 h1 {
     text-align: right;
     color: white;
     font-size: 54px;
 }
 
-.TextOverlay2 h6 {
+.textoverlay2 h6 {
     text-align: right;
     color: white;
     font-family: 'Vollkorn', serif;
@@ -118,7 +118,7 @@ button {
     About Section
 */
 
-#About {
+#about {
     display: flex;
     flex: 1;
     flex-flow: row wrap;
@@ -126,7 +126,7 @@ button {
     padding-right: 20px;
 }
 
-.AboutCard {
+.card {
     display: flex;
     flex: 1;
     flex-basis: 901.5px;
@@ -135,11 +135,11 @@ button {
     justify-content: space-between;
 }
 
-#Desk1 {
+#desk1 {
     flex: 1;
 }
 
-.AboutCardText {
+.card__content {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -149,12 +149,12 @@ button {
     background-size: cover;
 }
 
-.AboutCardText h2 {
+.card__content h2 {
     font-size: 46px;
     margin: 5px;
 }
 
-.AboutCardText h6 {
+.card__content h6 {
     font-size: 16px;
     font-weight: 300;
     font-family: 'Vollkorn', serif;
@@ -162,13 +162,13 @@ button {
     margin: 5px 0px 30px;
 }
 
-.AboutCardText p {
+.card__content p {
     font-size: 15px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #5c5c5c;
 }
 
-.AboutCardText button {
+.card__content button, .contactform button {
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     width: 170px;
@@ -176,13 +176,17 @@ button {
     margin: 50px;
 }
 
-.AboutCardText button:hover {
-    border: none;
+.card__content button:hover, .contactform button:hover {
+    border-color: transparent;
     background-color: #5c5c5c;
     color: white;
 }
 
-.AboutFooter {
+.card__content button:hover, .contactform button:focus {
+    outline: 0;
+}
+
+    .aboutend {
     display: flex;
     flex: 1;
     justify-content: space-evenly;
@@ -190,13 +194,13 @@ button {
     padding: 40px 0px 40px 0px;
 }
 
-.AboutFooter h2 {
+.aboutend h2 {
     font-size: 38px;
     padding: 0;
     margin: 0;
 }
 
-.AboutFooter h6 {
+.aboutend h6 {
     font-size: 16px;
     font-weight: 300;
     font-family: 'Vollkorn', serif;
@@ -204,7 +208,7 @@ button {
     margin: 5px 0px 30px;
 }
 
-#Services {
+#services {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -212,79 +216,74 @@ button {
     padding: 0px;
 }
 
-.Service-container {
-    display: flex;
-    padding: 0;
-}
-
-.ServiceCard-container {
+.servicecard__container {
     display: flex;
     flex: 1;
-    flex-basis: 901.5px;
-    height: 600px;
-    padding: 0px 20px 20px 20px;
     justify-content: space-between;
+    padding-right: 20px;
 }
 
-.ServiceCards {
+.servicecard__subcontainer {
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-evenly;    
+    padding: 0px 10px 0px 0px;    
 }
 
-.ServiceCard {
+.service__card {
     display: flex;
     flex-direction: row;
     flex: 1;
     flex-basis: 400px;
-    padding: 0px 20px 20px 20px;  
+    padding: 0px 0px 0px 20px;  
 }
 
-.ServiceCardText {
+.service__card .card__content {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.cardcontent--servicetext {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 100px 0px 100px;
     text-align: center;
     background-color: whitesmoke;
     background-size: cover;
 }
 
-.ServiceCardText h2 {
+.service__card h2 {
     font-weight: 700;
     font-size: 42px;
+    margin-top: 18px;
     margin-bottom: 0;
 }
 
-.ServiceCardText p {
+.service__card p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    padding-top: 0;
+    padding-top: 10px;
 }
 
-.AboutCards {
-    display: flex;
-}
-
-.ServiceCardText img {
+.service__card img {
     width: 125px;
     align-self: center;
 }
 
-.one:hover {
+.card--one:hover:hover {
     background-color: rgba(104, 64, 24, 0.15);
 }
 
-.two:hover {
+.card--two:hover {
     background-color: rgba(185, 58, 35, 0.15);
 }
 
-.three:hover {
+.card--three:hover {
     background-color: rgba(54, 53, 51, 0.15);
 }
 
-.ServiceFooter {
+.service__end {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -292,20 +291,20 @@ button {
     padding: 80px 20px 80px 20px;
 }
 
-.ServiceFooterCard h2 {
+.service__end h2 {
     font-size: 46px;
     padding: 0px 0px 5px 0px;
     margin: 0;
 }
 
-.ServiceFooterCard h6 {
+.service__end h6 {
     font-family: 'Vollkorn', serif;
     font-size: 16px;
     font-weight: 300;
     padding: 0px 0px 10px 0px;
 }
 
-.AnimatedQuote {
+.animatedquote {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-size: 20px;
@@ -313,20 +312,150 @@ button {
     padding-top: 30px;
 }
 
-.AnimatedName {
+.animatedname {
     font-weight: 600;
 }
 
-.AnimatedQuote::before {
+.animatedquote::before {
     content: "'I don't like people, but I make an exception for ABC Agency. They're pretty damn cool.'";
     animation: animate infinite 16s, fadeIn infinite 16s;
     animation-timing-function: ease;
 }
 
-.AnimatedName::before {
+.animatedname::before {
     content: "Brian Jones, America Big Corporation";
     animation: fadeIn infinite 16s, animateName infinite 16s;
     animation-timing-function: ease;
+}
+
+
+.portfolio__container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio__card {
+    display: flex;
+    flex-direction: column;
+    width: 450.75px;
+    padding-bottom: 20px;
+}
+
+.portfolio__card h2 {
+    font-size: 42px;
+    margin: 0px 5px;
+}
+
+.portfolio__card h6 {
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.portfolio__card p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+#contact {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.contact__text {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    text-align: center;
+}
+
+.contact__text h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.contact__text h6 {
+    padding-bottom: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 300;
+    font-size: 17px;
+    font-style: italic;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+#label {
+    font-weight: 600;
+}
+
+textarea {
+    width: 50%;
+    height: 10%;
+    resize: vertical;
+}
+
+.contactform button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    width: 170px;
+    align-self: center;
+    margin: 50px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+}
+
+.footer__row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #333333;
+    padding: 80px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+#footerlogo {
+    width: 80px;
+}
+
+#footerhome {
+    color: #5c5c5c;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer__column > a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5c5c5c;
+    margin: 0px 0px 30px; 
+}
+
+.footer--text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: whitesmoke;
 }
 
 @keyframes animate {
@@ -365,139 +494,4 @@ button {
     49% {opacity: 0;}
     74% {opacity: 1;}
     100% {opacity:0;}
-}
-  
-.PortfolioContainer {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.PortfolioCard {
-    display: flex;
-    flex-direction: column;
-    width: 450.75px;
-    padding-bottom: 20px;
-}
-
-.PortfolioCard h2 {
-    font-size: 42px;
-    margin: 0px 5px;
-}
-
-.PortfolioCard h6 {
-    font-family: 'Vollkorn', serif;
-    font-size: 16px;
-    font-weight: 300;
-    padding-bottom: 20px;
-}
-
-.PortfolioCard p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-}
-
-#Contact {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-.ContactHeader {
-    display: flex;
-    flex: 1;
-    flex-flow: column;
-    text-align: center;
-}
-
-.ContactHeader h2 {
-    font-size: 42px;
-    margin-bottom: 5px;
-}
-
-.ContactHeader h6 {
-    padding-bottom: 50px;
-    font-family: 'Vollkorn', serif;
-    font-weight: 300;
-    font-size: 17px;
-    font-style: italic;
-}
-
-input[type=text] {
-    width: 50%;
-}
-
-#Label {
-    font-weight: 600;
-}
-
-textarea {
-    width: 50%;
-    height: 10%;
-    resize: vertical;
-}
-
-.ContactForm button {
-    font-family: 'Montserrat', sans-serif;
-    background-color: transparent;
-    width: 170px;
-    align-self: center;
-    margin: 50px;
-}
-
-.ContactForm button:hover {
-    border: none;
-    background-color: #5c5c5c;
-    color: white;
-}
-
-footer {
-    display: flex;
-    padding: 20px;
-}
-
-.FooterRow {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    background-color: #333333;
-    padding: 80px;
-}
-
-.FooterColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 25%;
-}
-
-#FooterLogo {
-    width: 80px;
-}
-
-#footer-home {
-    color: #5c5c5c;
-    margin-bottom: 20px;
-}
-
-.FooterColumn > a {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: none;
-    color: whitesmoke;
-
-}
-
-h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #5c5c5c;
-    margin: 0px 0px 30px;
-    
-}
-
-.footer-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: whitesmoke;
 }
